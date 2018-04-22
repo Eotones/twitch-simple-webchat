@@ -1,0 +1,21 @@
+body {
+    font-family: "微軟正黑體", Arial, 'LiHei Pro', sans-serif;
+    background-color: #333;
+}
+
+#output {
+    font-size: 16px;
+    color: #eee;
+    text-shadow: 0 0 6px #000;
+}
+
+.display_name {
+    font-weight: bolder;
+    font-family: "微軟正黑體修正", "微軟正黑體";
+    color: #cc3;
+}
+
+.msg {
+    padding-left: 3em;
+    font-size: 30px;
+}
