@@ -1,8 +1,10 @@
+import TwitchWS from './js/TwitchWS.class.js';
+
 const init = () => {
     const config = {};
     config.username = "justinfan12345"; // username
     config.oauth = "oauth:kappa"; // oauth
-    config.channel = "mobilmobil"; // channel
+    config.channel = "bobross"; // channel
     config.wsUri = "wss://irc-ws.chat.twitch.tv/"; //twitch irc server
     config.bots = ["Nightbot", "Moobot", "JIBOT"]; // Bots
     config.output_div_id = "output"; // <div id="output"></div>
@@ -10,6 +12,7 @@ const init = () => {
     config.DEBUG_MODE = false; // DEBUG_MODE && console.log("debug mod");
 
     const tw_ws = new TwitchWS(config);
+    tw_ws.start();
 };
 
 window.addEventListener("load", init, false);
